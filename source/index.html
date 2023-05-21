@@ -12,20 +12,22 @@
         
         <a class="logo page-header__logo">
           <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy" width="34" height="38">
-          <img class="logo__sign" src="img/logo/logo-sign.svg" alt="" width="101" height="19">
+          <img class="logo__sign" src="img/logo/logo-sign.svg" alt="" width="101" height="19" aria-hidden="true">
         </a>
 
         <button class="page-header__toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         
-        <ul class="page-header__menu site-menu">
+        <ul class="page-header__menu site-menu__list">
           <li class="site-menu__item site-menu__item--active">
             <a class="site-menu__link">Главная</a>
           </li>
+
           <li class="site-menu__item">
             <a href="./catalog.html" class="site-menu__link">Каталог продукции</a>
           </li>
+
           <li class="site-menu__item">
             <a href="./form.html" class="site-menu__link">Подбор программы</a>
           </li>
@@ -83,19 +85,19 @@
         <p class="live-example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. 
         </p>
-
+        
         <dl class="stats__list">
           <dt class="stats__title">Снижение веса</dt>
-          <dd class="stats__value">5 кг</dd>
+            <dd class="stats__value">5 кг</dd>
           <dt class="stats__title">Затрачено времени</dt>
-          <dd class="stats__value">60 дней</dd>
+            <dd class="stats__value">60 дней</dd>
         </dl>
 
         <p class="live-example__spending">Затраты на питание: 15 000 РУБ.</p>
 
-        <div class="example__picture">
-          <img class="example__img" src="./img/content/before-mobile.png" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным" width="280" height="322">
-          <img class="example__img" src="./img/content/after-mobile.png" alt="Кот после употребления корма: выглядит молодым, худым и бодрым" width="280" height="232">
+        <div class="live-example__picture">
+          <img class="live-example__img" src="./img/content/before-mobile.png" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным" width="280" height="322">
+          <img class="live-example__img" src="./img/content/after-mobile.png" alt="Кот после употребления корма: выглядит молодым, худым и бодрым" width="280" height="232">
         </div>
 
         <div class="live-example__switcher switcher">
@@ -105,34 +107,42 @@
 
       </section>
 
-      <footer class="page-main__footer contacts">
+    </main>
+
+    <footer class="page__footer page-footer">
+
+      <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
 
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br>Санкт-Петербург</address>
 
         <img class="contacts__map" src="./img/content/map.png" alt="Карта к нашему офису" width="320" height="362">
-      </footer>
-    </main>
+      </section>
 
-    <footer class="page__footer"></footer>
-      <a class="page__footer__logo logo">
+      <a class="page-footer__logo logo">
         <img class="logo__img" src="./img/logo/logo-footer.svg" alt="Cat Energy" width="128" height="24">
       </a>
-  
-      <ul class="page__footer__social social">
+
+      <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#" >vk</a>
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--inst" href="#" >instagram</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--tg" href="#" >tg</a>
+          <a class="social__link social__link--telegram" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
         </li>
       </ul>
 
-      <a class="page__footer__developer developer" href="#">
+      <a class="page-footer__developer developer" href="#">
         <span class="visually-hidden">Разработано в </span>HTML Academy
         <img class="developer__img" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34" aria-hidden="true">
       </a>
