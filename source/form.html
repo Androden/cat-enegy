@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Cat energy: функциональное питание для котов</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
 
     <header class="page__header page-header">
-      
+
       <nav class="page-header__nav">
-        
+
         <a class="logo page-header__logo">
           <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy" width="34" height="38">
           <img class="logo__sign" src="img/logo/logo-sign.svg" alt="" width="101" height="19" aria-hidden="true">
@@ -18,7 +19,7 @@
         <button class="page-header__toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        
+
         <ul class="page-header__menu site-menu__list">
           <li class="site-menu__item">
             <a class="site-menu__link" href="./index.html">Главная</a>
@@ -34,11 +35,11 @@
         </ul>
 
       </nav>
-      
+
     </header>
 
     <main class="page__main page-main page-form">
-      
+
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
@@ -66,17 +67,17 @@
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__lead">Возраст (лет):</span>
-                  <input class="field__input" name="cat-name" type="text" placeholder="6">
+                  <input class="field__input" name="cat-age" type="text" placeholder="6">
                 </label>
               </li>
             </ul>
-            
+
           </fieldset>
 
           <fieldset class="form__group field-group">
             <legend class="visually-hidden">Цель программы</legend>
-            
-             <ul class="field-group__list">
+
+            <ul class="field-group__list">
               <li class="field-group__item">
                 <label class="control control--radio">
                   <input class="control__input" type="radio" name="programms" value="slim">
@@ -130,34 +131,33 @@
 
           <fieldset class="form__group field-group">
             <legend class="page-main__title page-form__title">Дополнительно</legend>
-
-             <ul class="field-group__list">
-              <li class="field-group__item">
-                <label class="control control--chekbox">
-                  <input class="control__input" type="checkbox" name="additional" value="sweetener" checked>
-                  <span class="control__lead">Сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="control control--chekbox">
-                  <input class="control__input" type="checkbox" name="additional" value="water">
-                  <span class="control__lead">Питьевая вода</span>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="control control--chekbox">
-                  <input class="control__input" type="checkbox" name="additional" value="milk">
-                  <span class="control__lead">Молоко</span>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="control control--chekbox">
-                  <input class="control__input" type="checkbox" name="additional" value="vitamins">
-                  <span class="control__lead">Витамины</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+              <ul class="field-group__list">
+                <li class="field-group__item">
+                  <label class="control control--chekbox">
+                    <input class="control__input" type="checkbox" name="additional" value="sweetener" checked>
+                    <span class="control__lead">Сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--chekbox">
+                    <input class="control__input" type="checkbox" name="additional" value="water">
+                    <span class="control__lead">Питьевая вода</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--chekbox">
+                    <input class="control__input" type="checkbox" name="additional" value="milk">
+                    <span class="control__lead">Молоко</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--chekbox">
+                    <input class="control__input" type="checkbox" name="additional" value="vitamins">
+                    <span class="control__lead">Витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__additional-text">* — Обязательные поля</p>
