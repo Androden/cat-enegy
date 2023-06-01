@@ -1,0 +1,19 @@
+.form {
+  padding: 20px;
+}
+
+.form__group {
+  margin: 0;
+}
+
+.form__button {
+  border: none;
+}
+
+.form__additional-text {
+  font-family: $font-body;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-black;
+}

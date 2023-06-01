@@ -1,0 +1,16 @@
+.offer {
+  padding: 40px;
+
+  background-color: $color-primary-500;
+  background-image: url("../../img/content/offer-background.png");
+}
+
+.offer__text {
+  color: $color-white;
+
+  font-family: $font-body;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+}

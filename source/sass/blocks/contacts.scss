@@ -1,4 +1,10 @@
-.show-more__title {
+.contacts {
+  padding: 20px;
+
+  background-color: $color-white;
+}
+
+.contacts__title {
   color: $color-gray-900;
 
   font-family: $font-heading;
@@ -8,18 +14,12 @@
   text-transform: uppercase;
 }
 
-.show-more__text {
+.contacts__address {
   color: $color-gray-700;
 
   font-family: $font-body;
-  font-size: 12px;
-  line-height: 16px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 400;
-}
-
-.show-more__button {
-  background-color: $color-gray-50;
-  color: $color-gray-700;
-
-  text-decoration: none;
 }

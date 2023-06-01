@@ -1,0 +1,16 @@
+.process {
+  padding: 20px;
+}
+
+.process__list {
+  list-style-type: none;
+}
+
+.process__item {
+  color: $color-gray-700;
+
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}

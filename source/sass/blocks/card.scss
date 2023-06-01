@@ -1,5 +1,13 @@
-.show-more__title {
-  color: $color-gray-900;
+.card {
+  background: $color-gray-50;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  color: $color-gray-850;
 
   font-family: $font-heading;
   font-size: 16px;
@@ -8,7 +16,7 @@
   text-transform: uppercase;
 }
 
-.show-more__text {
+.card__features-list {
   color: $color-gray-700;
 
   font-family: $font-body;
@@ -17,9 +25,6 @@
   font-weight: 400;
 }
 
-.show-more__button {
-  background-color: $color-gray-50;
-  color: $color-gray-700;
-
+.card__button {
   text-decoration: none;
 }

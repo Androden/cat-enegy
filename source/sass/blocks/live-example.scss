@@ -1,0 +1,24 @@
+.live-example {
+  padding: 20px;
+
+  background-color: $color-gray-100;
+}
+
+.live-example__text {
+  color: $color-gray-700;
+
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.live-example__spending {
+  color: $color-black;
+
+  font-family: $font-heading;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
