@@ -3,14 +3,31 @@
 }
 
 .process__list {
+  padding: 0;
+
+  color: $color-gray-700;
+
   list-style-type: none;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .process__item {
-  color: $color-gray-700;
-
-  font-family: $font-body;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+  @media (max-width: $mobile) {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+  //font-family: $font-body;
+  //font-size: 14px;
+  //line-height: 18px;
+  //font-weight: 400;
 }

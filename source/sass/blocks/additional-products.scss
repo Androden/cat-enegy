@@ -1,4 +1,8 @@
 .additional-products__title {
+
+  @media (max-width: $mobile) {
+    margin-bottom: 36px;
+  }
   color: $color-black;
 
   font-family: $font-heading;
@@ -9,4 +13,9 @@
 
 .additional-products__list {
   list-style-type: none;
+
+  @media (max-width: $mobile) {
+    padding-left: 0;
+    margin-bottom: 36px;
+  }
 }

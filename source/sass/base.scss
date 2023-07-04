@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -24,4 +30,26 @@
 .button--secondary {
   color: $color-gray-700;
   background-color: $color-gray-50;
+}
+img{
+  max-width: 100%;
+}
+
+.page {
+  min-width: 320px;
+  //padding: 0 20px;
+}
+
+.container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+  }
 }

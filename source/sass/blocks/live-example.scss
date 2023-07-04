@@ -4,13 +4,21 @@
   background-color: $color-gray-100;
 }
 
+.live-example__container {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .live-example__text {
   color: $color-gray-700;
 
-  font-family: $font-body;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+  //font-family: $font-body;
+  //font-size: 14px;
+  //line-height: 18px;
+  //font-weight: 400;
 }
 
 .live-example__spending {
@@ -21,4 +29,12 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.live-example__picture{
+
+}
+
+.live-example__switcher{
+  grid-area: switcher;
 }

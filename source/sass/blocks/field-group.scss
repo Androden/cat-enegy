@@ -10,8 +10,41 @@
   font-weight: 400;
 }
 
-.field-group__list {
+.cat-data{
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field-group__contacts{
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.additional-products__field-list {
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
+
+.form__button-container{
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+

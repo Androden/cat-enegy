@@ -1,3 +1,20 @@
+.card-row{
+  display: grid;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+
+    padding-top: 13px;
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 895px;
+    grid-template-columns: 1fr 1fr 245px;
+    gap: 38px;
+  }
+}
+
 .card-row__title {
   color: $color-gray-700;
 
@@ -6,17 +23,44 @@
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
 }
 
 .card-row__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
   color: $color-gray-850;
 
   font-family: $font-body;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop) {
+
+  }
+}
+
+.card-row__quantity{
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.card-row__price{
+  margin-left: auto;
 }
 
 .card-row__button {
+  text-align: center;
   text-decoration: none;
 }

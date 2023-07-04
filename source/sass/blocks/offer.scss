@@ -3,6 +3,10 @@
 
   background-color: $color-primary-500;
   background-image: url("../../img/content/offer-background.png");
+
+  @media (max-width: $mobile) {
+    margin-bottom: 35px;
+  }
 }
 
 .offer__text {

@@ -1,3 +1,22 @@
 .social {
+  margin: 0;
+  padding: 20px 0;
   list-style-type: none;
 }
+
+.social__link{
+  width: 22px;
+  height: 22px;
+  display: block;
+  background: $color-gray-100 no-repeat center;
+  &--vk{
+    background-image: url("../../img/social-icon/vkontakte.svg");
+  }
+  &--youtube{
+    background-image: url("../../img/social-icon/facebook.svg");
+  }
+  &--telegram{
+    background-image: url("../../img/social-icon/instagram.svg");
+  }
+}
+

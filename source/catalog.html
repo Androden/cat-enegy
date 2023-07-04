@@ -2,15 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat energy: функциональное питание для котов</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
 
-    <header class="page__header page-header">
+  <header class="page__header page-header">
 
-      <nav class="page-header__nav">
-
+    <nav class="page-header__nav">
+      <div class="page-header__bar">
         <a class="logo page-header__logo">
           <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy" width="34" height="38">
           <img class="logo__sign" src="img/logo/logo-sign.svg" alt="" width="101" height="19" aria-hidden="true">
@@ -19,28 +20,30 @@
         <button class="page-header__toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <ul class="page-header__menu site-menu__list">
+        <li class="site-menu__item site-menu__item--active">
+          <a href="./index.html" class="site-menu__link">Главная</a>
+        </li>
 
-        <ul class="page-header__menu site-menu__list">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="./index.html">Главная</a>
-          </li>
+        <li class="site-menu__item">
+          <a class="site-menu__link">Каталог продукции</a>
+        </li>
 
-          <li class="site-menu__item site-menu__item--active">
-            <a class="site-menu__link" href="./catalog.html">Каталог продукции</a>
-          </li>
+        <li class="site-menu__item">
+          <a href="./form.html" class="site-menu__link">Подбор программы</a>
+        </li>
+      </ul>
 
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="./form.html">Подбор программы</a>
-          </li>
-        </ul>
+    </nav>
 
-      </nav>
-
-    </header>
+  </header>
 
     <main class="page__main page-main">
+      <header class="page-main__header container">
+        <h1 class="page-main__title">Каталог продукции</h1>
+      </header>
 
-      <h1 class="page-main__title">Каталог продукции</h1>
       <section class="page-main__section catalog-cards cards">
         <h2 class="visually-hidden">Основные товары</h2>
 
@@ -194,14 +197,14 @@
           </li>
         </ul>
 
-        <div class="catalog-list__item show-more">
+        <div class="catalog-list__item show-more container">
           <p class="show-more__title">Показать еще 100500 товаров</p>
           <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
           <a class="button show-more__button" href="#">Показать все</a>
         </div>
       </section>
 
-      <section class="page-main__section catalog-main__additional-products additional-products">
+      <section class="page-main__section catalog-main__additional-products additional-products container">
         <h2 class="additional-products__title">Дополнительные товары</h2>
 
         <ul class="additional-products__list">
@@ -259,7 +262,7 @@
         </ul>
       </section>
 
-      <section class="catalog-main__promo offer">
+      <section class="catalog-main__promo offer container">
         <h2 class="visually-hidden">Специальное предложение</h2>
         <p class="offer__text">Закажите все и получите чехол для кота в подарок!</p>
       </section>
@@ -268,16 +271,19 @@
 
     <footer class="page__footer page-footer">
 
-      <section class="page-footer__contacts contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+    <section class="page-footer__contacts contacts">
+      <h2 class="visually-hidden">Контакты</h2>
 
+      <div class="contacts__container container">
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br>Санкт-Петербург</address>
+      </div>
 
-        <img class="contacts__map" src="./img/content/map.png" alt="Карта к нашему офису" width="320" height="362">
-      </section>
+      <img class="contacts__map" src="./img/content/map.png" alt="Карта к нашему офису" width="320" height="362">
+    </section>
 
-      <a class="page-footer__logo logo">
+    <div class="page-footer__container container">
+      <a class="page-footer__logo">
         <img class="logo__img" src="./img/logo/logo-footer.svg" alt="Cat Energy" width="128" height="24">
       </a>
 
@@ -300,9 +306,11 @@
       </ul>
 
       <a class="page-footer__developer developer" href="#">
-        <span class="visually-hidden">Разработано в </span>HTML Academy
+        <p class="developer__text"><span class="visually-hidden">Разработано в </span>HTML Academy</p>
         <img class="developer__img" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34" aria-hidden="true">
       </a>
-    </footer>
+    </div>
+
+  </footer>
   </body>
 </html>

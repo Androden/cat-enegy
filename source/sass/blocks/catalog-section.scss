@@ -1,7 +1,27 @@
+.catalog-section__container {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .catalog-section__item {
   padding: 20px;
 
   background-color: $color-gray-50;
+
+  & + & {
+    margin-top: 20px;
+
+    @media (min-width: $tablet) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 0;
+    }
+  }
 }
 
 .catalog-section__title {
@@ -27,7 +47,7 @@
 
   font-family: $font-heading;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;

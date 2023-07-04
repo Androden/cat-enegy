@@ -1,3 +1,48 @@
 .page-header {
   background-color: $color-white;
 }
+
+.page-header__nav {
+  @media (max-width: $tablet) {
+    width: 320px;
+    margin: 0 auto;
+    padding: 10px 20px 0;
+  }
+
+  @media (min-width: $tablet) {
+    width: 708px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 176px 1fr;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+  }
+}
+
+.page-header__bar {
+  display: grid;
+  align-items: center;
+  @media (max-width: $tablet) {
+
+    grid-template-columns: 34px 1fr 34px;
+    gap: 16px;
+
+  }
+}
+
+.page-header__logo {
+
+}
+
+.page-header__menu {
+  margin: 0;
+}
+
+.page-header__toggler {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

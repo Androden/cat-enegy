@@ -1,7 +1,12 @@
-.contacts {
-  padding: 20px;
-
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: $color-white;
+
+  @media(max-width: $mobile){
+    padding: 25px 0;
+    background-color: $color-gray-100;
+  }
 }
 
 .contacts__title {
@@ -12,6 +17,10 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (max-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
 .contacts__address {
@@ -22,4 +31,9 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.contacts__map{
+  grid-column: 1/3;
+  background-color: $color-white;
 }

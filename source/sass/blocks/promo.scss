@@ -1,4 +1,5 @@
 .promo {
+  margin-bottom: 20px;
   padding: 20px;
 
   color: $color-white;
@@ -6,19 +7,34 @@
   background-image: url("../../img/content/background-cat.png");
 
   text-align: center;
+
+  @media (min-width: $tablet) {
+    color: $color-black;
+    //background-image: none;
+    background-color: transparent;
+
+    text-align: left;
+  }
+}
+
+.promo__container {
+  @media (min-width: $tablet) {
+    padding-left: 90px;
+  }
 }
 
 .promo__title {
-  color: $color-white;
+  color: inherit;
 
   font-family: $font-heading;
   font-size: 36px;
   font-weight: 400;
   line-height: 1;
+  //text-align: center;
 }
 
 .promo__text {
-  color: $color-white;
+  color: inherit;
 
   font-family: $font-heading;
   font-size: 14px;
@@ -29,9 +45,12 @@
 
 .promo__img {
   max-width: 100%;
+  grid-area: img;
 }
 
 .promo__button {
+  grid-area: button;
+
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
