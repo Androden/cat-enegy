@@ -5,6 +5,15 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (max-width: $tablet) {
+
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .page-main__subtitle {

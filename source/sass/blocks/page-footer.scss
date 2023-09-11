@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: $color-gray-100;
+  background-color: $color-gray-50;
 }
 
 .page-footer__container {
@@ -12,13 +12,18 @@
   @media (min-width: $tablet) {
     grid-template-columns: 128px 1fr 164px;
     gap: 16px;
+    padding: 15px 0;
   }
 }
 
 .page-footer__logo{
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
+    width: 100%;
+    border-bottom: 1px solid $color-gray-200;
+
     padding-top: 39px;
     padding-bottom: 32px;
+    text-align: center;
   }
 }
 
