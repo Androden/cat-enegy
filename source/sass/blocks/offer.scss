@@ -4,8 +4,15 @@
   background-color: $color-primary-500;
   background-image: url("../../img/content/offer-background.png");
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../../img/content/offer-background--desktop.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

@@ -21,6 +21,7 @@
     }
   }
 
+
   @media (min-width: $tablet) {
     padding: 24px 0 24px;
     flex-direction: row;
@@ -50,7 +51,7 @@
       border-bottom: 2px solid $basic-primary-600;
     }
     @media (min-width: $desktop) {
-      border-bottom-color: $color-white;
+
     }
   }
 }
@@ -67,7 +68,19 @@
   }
 
   @media (min-width: $desktop) {
-    color: $color-white;
     font-size: 20px;
+  }
+}
+
+.site-menu__list--main{
+
+  .site-menu__item--active{
+    @media (min-width: $desktop) {
+      border-bottom-color: $color-white;
+    }
+  }
+
+  .site-menu__link{
+    color: $color-white;
   }
 }

@@ -1,6 +1,7 @@
 .cards__list{
   display: grid;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
 
   list-style-type: none;
 
@@ -11,44 +12,69 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }
 
-.card__item{
+.card__item {
+  border-top: 1px solid $color-gray-100;
 
+  @media (min-width: $tablet) {
+    border-top: none;
+    background-image: linear-gradient(to top, $color-gray-100 350px, $color-white 200px);
+  }
 }
 
 .card {
-  display: grid;
-
-  margin-bottom: 19px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 13px;
 
-  background-color: $color-gray-50;
+  display: grid;
 
-  @media (max-width: $mobile) {
-    grid-template-columns: 1fr 1fr;
-    background-color: $color-white;
+  background-color: $color-white;
+
+  @media (min-width: $tablet) {
+    padding: 23px 20px;
+
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
   }
 }
 
 .card__link {
   text-decoration: none;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     grid-column: 2/3;
+  }
+
+  @media (min-width: $tablet) {
+    grid-row: 2/3;
+    justify-self: center;
   }
 }
 
 .card__img{
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     grid-row: 1/3;
+    min-width: 110px;
+  }
+  
+  @media (min-width: $tablet) {
+    margin-bottom: 34px;
+    justify-self: center;
   }
 }
 
 .card__title {
   margin: 0;
   padding-right: 64px;
+  padding-bottom: 10px;
 
   color: $color-gray-850;
 
@@ -57,13 +83,26 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    max-width: 150px;
+    padding-bottom: 20px;
+    padding-right: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .card__button {
+  margin-top: 25px;
+  padding: 11px 0;
+
   text-align: center;
   text-decoration: none;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     grid-column: span 2;
     justify-self: stretch;
   }
@@ -83,5 +122,30 @@
   font-weight: 400;
 
   list-style-type: none;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+
+  dt {
+    @media (min-width: $tablet) {
+      border-bottom: 1px solid $color-gray-250;
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  }
+
+  dd {
+    margin-left: auto;
+
+    text-align: right;
+
+    @media (min-width: $tablet) {
+      border-bottom: 1px solid $color-gray-250;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      margin-inline-start: 0;
+    }
+  }
 }
 

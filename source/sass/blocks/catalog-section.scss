@@ -1,3 +1,17 @@
+.catalog-main {
+  border-top: 1px solid $color-gray-200;
+  padding-top: 27px;
+
+  @media (min-width: $tablet) {
+    border-top: none;
+  }
+}
+
+.catalog-title {
+  margin: 0;
+  padding-bottom: 40px;
+}
+
 .catalog-section__container {
   @media (min-width: $desktop) {
     display: grid;

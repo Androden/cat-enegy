@@ -25,3 +25,19 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
+
+.page-main__subtitle--form {
+  @media (max-width: $tablet) {
+    max-width: 230px;
+    padding-top: 20px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  @media (min-width: $tablet) {
+    max-width: 325px;
+    padding-top: 20px;
+  }
+}

@@ -1,19 +1,53 @@
 .form {
-  padding: 20px;
+  margin-top: 35px;
+  //padding: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .form__group {
-  margin: 0;
+
+}
+
+.form__button-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .form__button {
   border: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .form__additional-text {
   font-family: $font-body;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: $color-black;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1;
+  }
 }

@@ -4,6 +4,10 @@
   @media (min-width: $desktop) {
     position: relative;
   }
+
+  &--catalog {
+    background-color: $color-gray-50;
+  }
 }
 
 .contacts__container {
@@ -28,7 +32,10 @@
 
 
     background-color: $color-white;
+  }
 
+  &--catalog {
+    background-color: $color-gray-50;
   }
 }
 

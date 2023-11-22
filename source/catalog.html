@@ -39,12 +39,12 @@
 
   </header>
 
-    <main class="page__main page-main">
+    <main class="page__main catalog-main">
       <header class="page-main__header container">
-        <h1 class="page-main__title">Каталог продукции</h1>
+        <h1 class="page-main__title catalog-title">Каталог продукции</h1>
       </header>
 
-      <section class="page-main__section catalog-cards cards">
+      <section class="page-main__section catalog-cards cards container">
         <h2 class="visually-hidden">Основные товары</h2>
 
         <ul class="cards__list">
@@ -195,86 +195,93 @@
               <a class="card__button button" href="#">Заказть</a>
             </article>
           </li>
+
+          <li class="catalog-list__item show-more">
+            <div class="show-more__text">
+              <p class="show-more__title">Показать еще 100500 товаров</p>
+              <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
+            </div>
+            <a class="button show-more__button" href="#">Показать все</a>
+          </li>
         </ul>
 
-        <div class="catalog-list__item show-more container">
-          <p class="show-more__title">Показать еще 100500 товаров</p>
-          <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-          <a class="button show-more__button" href="#">Показать все</a>
-        </div>
       </section>
 
-      <section class="page-main__section catalog-main__additional-products additional-products container">
+      <div class="additional-products__container container">
+
         <h2 class="additional-products__title">Дополнительные товары</h2>
 
-        <ul class="additional-products__list">
-          <li class="additional-products__item card-row">
-            <h3 class="card-row__title">Сахарозаменитель</h3>
+        <section class="page-main__section catalog-main__additional-products additional-products">
 
-            <dl class="card-row__list">
-              <dt class="visually-hidden">Объём</dt>
+          <ul class="additional-products__list">
+            <li class="additional-products__item card-row">
+              <h3 class="card-row__title">Сахарозаменитель</h3>
+
+              <dl class="card-row__list">
+                <dt class="visually-hidden">Объём</dt>
                 <dd class="card-row__quantity">1 упаковка (100 г)</dd>
-              <dt class="visually-hidden">Цена</dt>
+                <dt class="visually-hidden">Цена</dt>
                 <dd class="card-row__price">200 р.</dd>
-            </dl>
+              </dl>
 
-            <a class="card-row__button button" href="#">Заказть</a>
-          </li>
+              <a class="card-row__button button" href="#">Заказть</a>
+            </li>
 
-          <li class="additional-products__item card-row">
-            <h3 class="card-row__title">Питьевая вода</h3>
+            <li class="additional-products__item card-row">
+              <h3 class="card-row__title">Питьевая вода</h3>
 
-            <dl class="card-row__list">
-              <dt class="visually-hidden">Объём</dt>
-                <dd class="card-row__quantity">1 упаковка 5 литров</dd>
-              <dt class="visually-hidden">Цена</dt>
+              <dl class="card-row__list">
+                <dt class="visually-hidden">Объём</dt>
+                <dd class="card-row__quantity">5 литров</dd>
+                <dt class="visually-hidden">Цена</dt>
                 <dd class="card-row__price">50 р.</dd>
-            </dl>
+              </dl>
 
-            <a class="card-row__button button" href="#">Заказть</a>
-          </li>
+              <a class="card-row__button button" href="#">Заказть</a>
+            </li>
 
-          <li class="additional-products__item card-row">
-            <h3 class="card-row__title">Молоко</h3>
+            <li class="additional-products__item card-row">
+              <h3 class="card-row__title">Молоко</h3>
 
-            <dl class="card-row__list">
-              <dt class="visually-hidden">Объём</dt>
+              <dl class="card-row__list">
+                <dt class="visually-hidden">Объём</dt>
                 <dd class="card-row__quantity">1 литр</dd>
-              <dt class="visually-hidden">Цена</dt>
+                <dt class="visually-hidden">Цена</dt>
                 <dd class="card-row__price">100 р.</dd>
-            </dl>
+              </dl>
 
-            <a class="card-row__button button" href="#">Заказть</a>
-          </li>
+              <a class="card-row__button button" href="#">Заказть</a>
+            </li>
 
-          <li class="additional-products__item card-row">
-            <h3 class="card-row__title">Витамины</h3>
+            <li class="additional-products__item card-row">
+              <h3 class="card-row__title">Витамины</h3>
 
-            <dl class="card-row__list">
-              <dt class="visually-hidden">Объём</dt>
+              <dl class="card-row__list">
+                <dt class="visually-hidden">Объём</dt>
                 <dd class="card-row__quantity">1 упаковка (30 г)</dd>
-              <dt class="visually-hidden">Цена</dt>
+                <dt class="visually-hidden">Цена</dt>
                 <dd class="card-row__price">300 р.</dd>
-            </dl>
+              </dl>
 
-            <a class="card-row__button button" href="#">Заказть</a>
-          </li>
-        </ul>
+              <a class="card-row__button button" href="#">Заказть</a>
+            </li>
+          </ul>
       </section>
 
-      <section class="catalog-main__promo offer container">
+        <section class="catalog-main__promo offer">
         <h2 class="visually-hidden">Специальное предложение</h2>
         <p class="offer__text">Закажите все и получите чехол для кота в подарок!</p>
       </section>
+      </div>
 
     </main>
 
     <footer class="page__footer page-footer">
 
-    <section class="page-footer__contacts contacts">
+    <section class="page-footer__contacts contacts contacts--catalog">
       <h2 class="visually-hidden">Контакты</h2>
 
-      <div class="contacts__container container">
+      <div class="contacts__container contacts__container--catalog container">
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br>Санкт-Петербург</address>
       </div>

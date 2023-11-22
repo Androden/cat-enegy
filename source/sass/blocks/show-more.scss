@@ -1,7 +1,22 @@
 .show-more{
-  margin-bottom: 50px;
+  padding-bottom: 25px;
+  border-top: 1px solid $color-gray-100;
 
   text-align: center;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    align-content: center;
+    margin-top: 80px;
+    border: 1px solid $color-gray-100;
+  }
+}
+
+.show-more__text {
+  @media (min-width: $tablet) {
+    max-width: 140px;
+    margin: 0 auto;
+  }
 }
 
 .show-more__title {
@@ -14,7 +29,7 @@
   text-transform: uppercase;
 }
 
-.show-more__text {
+.show-more__description {
   color: $color-gray-700;
 
   font-family: $font-body;
@@ -24,8 +39,15 @@
 }
 
 .show-more__button {
+  display: grid;
+  padding: 10px 0;
+
   background-color: $color-gray-50;
   color: $color-gray-700;
 
   text-decoration: none;
+  
+  @media (min-width: $tablet) {
+    margin: 0 35px;
+  }
 }
