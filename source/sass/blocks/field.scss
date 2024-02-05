@@ -39,3 +39,11 @@
     line-height: 1;
   }
 }
+
+.field__input[type="email"] {
+  background: url("../../img/icons/email.svg") no-repeat 95% center;
+}
+
+.field__input[type="tel"] {
+  background: url("../../img/icons/phone.svg") no-repeat 95% center;
+}

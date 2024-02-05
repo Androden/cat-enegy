@@ -81,6 +81,8 @@
   }
 
   .site-menu__link{
-    color: $color-white;
+    @media (min-width: $desktop) {
+      color: $color-white;
+    }
   }
 }

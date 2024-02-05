@@ -7,14 +7,17 @@
   }
 
   @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto 80px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 570px 570px;
     gap: 80px;
   }
+
 }
 
-.form__group {
-
+.form__group--full {
+  grid-column: 1/-1;
 }
 
 .form__button-container {
@@ -27,11 +30,15 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1220px;
+    text-align: left;
+    gap: 80px;
   }
 }
 
 .form__button {
+  padding: 10px 0;
+
   border: none;
 
   @media (min-width: $tablet) {

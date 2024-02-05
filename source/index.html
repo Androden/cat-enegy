@@ -13,7 +13,11 @@
     <nav class="page-header__nav">
       <div class="page-header__bar">
         <a class="logo page-header__logo">
-          <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy" width="34" height="38">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy" width="100%">
+          </picture>
           <img class="logo__sign" src="img/logo/logo-sign.svg" alt="" width="101" height="19" aria-hidden="true">
         </a>
 
@@ -45,7 +49,11 @@
         <div class="promo__container container">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__img" src="img/content/promo-img.png" alt="Банка куриного корма Cat Energy Pro на 500 грамм" width="280" height="270">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/promo-img.png 1x, img/content/promo-img-x2.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/promo-img.png 1x, img/content/promo-img-x2.png 2x">
+            <img class="works-item__image" src="img/content/promo-img.png" srcset="img/content/promo-img-x2.png 2x" alt="Банка куриного корма Cat Energy Pro на 500 грамм">
+          </picture>
           <a class="button promo__button" href="./form.html">Подобрать программу</a>
         </div>
       </header>
@@ -186,3 +194,18 @@
     </footer>
   </body>
 </html>
+
+<!--
+Адаптация контентных изображений под ретину
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="works-item__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            </picture>
+
+В CSS
+    @media (min-resolution: 2dppx) {
+      background-image: url("img/bg-header@2x.jpg");
+      background-size: 1338px auto;
+    }
+-->

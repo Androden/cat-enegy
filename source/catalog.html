@@ -13,7 +13,11 @@
     <nav class="page-header__nav">
       <div class="page-header__bar">
         <a class="logo page-header__logo">
-          <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy" width="34" height="38">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy" width="100%">
+          </picture>
           <img class="logo__sign" src="img/logo/logo-sign.svg" alt="" width="101" height="19" aria-hidden="true">
         </a>
 
@@ -198,6 +202,7 @@
 
           <li class="catalog-list__item show-more">
             <div class="show-more__text">
+              <a class="show-more__button--img" href="#"></a>
               <p class="show-more__title">Показать еще 100500 товаров</p>
               <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
             </div>
@@ -270,7 +275,7 @@
 
         <section class="catalog-main__promo offer">
         <h2 class="visually-hidden">Специальное предложение</h2>
-        <p class="offer__text">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="offer__text">Закажите все <br> и получите чехол для кота в подарок!</p>
       </section>
       </div>
 

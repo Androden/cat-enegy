@@ -1,22 +1,39 @@
 .offer {
-  padding: 40px;
+  margin-bottom: 35px;
+  padding: 60px;
 
   background-color: $color-primary-500;
-  background-image: url("../../img/content/offer-background.png");
+  background-image: url("../../img/content/offer-background--desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  @media (max-width: $tablet) {
-    margin-bottom: 35px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/content/offer-background--desktop-x2.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("../../img/content/offer-background.png");
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 0;
+    padding: 40px;
     background-image: url("../../img/content/offer-background--desktop.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/content/offer-background--desktop-x2.jpg");
+    }
   }
 }
 
 .offer__text {
+  max-width: 160px;
+  margin: 0 auto;
+
   color: $color-white;
 
   font-family: $font-body;
@@ -24,4 +41,38 @@
   line-height: 20px;
   font-weight: 400;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    align-items: center;
+    gap: 250px;
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 45px auto;
+    background-image: url("../../img/icons/gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      margin: auto;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 20px;
+      margin-bottom: 80px;
+    }
+  }
 }

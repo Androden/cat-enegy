@@ -48,8 +48,13 @@
     justify-self: start;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
+    grid-template-columns: 64px 100px;
+    gap: 10px;
+  }
 
+  @media (min-width: $tablet) {
+    grid-template-columns: 78px 120px;
   }
 }
 

@@ -12,3 +12,79 @@
     line-height: 1;
   }
 }
+
+.control__input[type="radio"] {
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    left: -9px;
+    top: -8px;
+
+    border: 1px solid $color-gray-250;
+    border-radius: 50%;
+
+    background-color: $color-white;
+  }
+  &:checked {
+    &::after {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+
+      position: absolute;
+      left: 0;
+      top: 1px;
+
+      border-radius: 50%;
+
+      background-color: $color-primary-500;
+    }
+  }
+}
+
+.control__input[type="checkbox"] {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    border: 1px solid $color-gray-250;
+
+    background-color: $color-white;
+  }
+
+  &:checked {
+    &::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+
+      position: absolute;
+      top: -8px;
+      left: 0;
+
+      background-image: url("../../img/icons/checkmark.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.control__lead {
+   margin-left: 20px;
+ }

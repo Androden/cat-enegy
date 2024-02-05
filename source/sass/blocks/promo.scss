@@ -22,13 +22,17 @@
       position: absolute;
       top: 0;
       right: 0;
-      bottom: 800px;
+      bottom: 340px;
       left: 50%;
       z-index: 0;
       background-color: $basic-primary-600;
       background-position: 0 100%;
       background-repeat: no-repeat;
-      background-image: url(../../img/content/background-cat-desctop.png);
+      background-image: url(../../img/content/background-cat-desktop.png);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/content/background-cat-desktop-x2.png");
+      }
     }
   }
 }
