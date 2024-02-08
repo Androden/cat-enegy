@@ -14,6 +14,10 @@
 
   @media (min-width: $tablet) {
     background-image: url("../../img/content/offer-background.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/content/offer-background--desktop-x2.jpg");
+    }
   }
 
   @media (min-width: $desktop) {

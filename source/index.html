@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat energy: функциональное питание для котов</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -16,7 +21,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-            <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy" width="100%">
+            <img class="logo__image" src="img/logo/logo-image.svg" alt="Cat Energy">
           </picture>
           <img class="logo__sign" src="img/logo/logo-sign.svg" alt="" width="101" height="19" aria-hidden="true">
         </a>
@@ -49,11 +54,13 @@
         <div class="promo__container container">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <picture>
+
+          <picture class="promo__img">
             <source media="(min-width: 1200px)" srcset="img/content/promo-img.png 1x, img/content/promo-img-x2.png 2x">
             <source media="(min-width: 768px)" srcset="img/content/promo-img.png 1x, img/content/promo-img-x2.png 2x">
-            <img class="works-item__image" src="img/content/promo-img.png" srcset="img/content/promo-img-x2.png 2x" alt="Банка куриного корма Cat Energy Pro на 500 грамм">
+            <img src="img/content/promo-img.png" alt="Банка куриного корма Cat Energy Pro на 500 грамм">
           </picture>
+
           <a class="button promo__button" href="./form.html">Подобрать программу</a>
         </div>
       </header>
@@ -124,10 +131,18 @@
           <div class="live-example__view">
             <div class="live-example__picture">
               <div class="live-example__img live-example__img--before live-example__img--active">
-                <img src="./img/content/before-mobile.png" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным" width="280" height="232">
+                <picture>
+                  <source srcset="img/content/before-mobile.png 1x, img/content/before-mobile-x2.png 2x">
+                  <img src="./img/content/before-mobile.png" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным" width="280" height="232">
+                </picture>
+
               </div>
               <div class="live-example__img live-example__img--after">
-                <img src="./img/content/after-mobile.png" alt="Кот после употребления корма: выглядит молодым, худым и бодрым" width="280" height="232">
+                <picture>
+                  <source srcset="img/content/after-mobile.png 1x, img/content/after-mobile-2x.png 2x">
+                  <img src="./img/content/after-mobile.png" alt="Кот после употребления корма: выглядит молодым, худым и бодрым" width="280" height="232">
+                </picture>
+
               </div>
             </div>
 
@@ -194,18 +209,3 @@
     </footer>
   </body>
 </html>
-
-<!--
-Адаптация контентных изображений под ретину
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-              <img class="works-item__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Пример нашей работы">
-            </picture>
-
-В CSS
-    @media (min-resolution: 2dppx) {
-      background-image: url("img/bg-header@2x.jpg");
-      background-size: 1338px auto;
-    }
--->

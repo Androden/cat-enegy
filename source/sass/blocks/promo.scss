@@ -1,4 +1,6 @@
 .promo {
+  position: relative;
+
   padding: 20px;
 
   @media (max-width: $tablet) {
@@ -17,12 +19,13 @@
   }
   @media (min-width: $desktop){
     min-height: 600px;
+    margin-bottom: 50px;
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -200px;
       right: 0;
-      bottom: 340px;
+      bottom: 0;
       left: 50%;
       z-index: 0;
       background-color: $basic-primary-600;
@@ -80,7 +83,7 @@
   }
 
   @media (min-width: $desktop) {
-    align-self: end;
+    align-self: center;
     //margin-bottom: 40px;
     margin: 0;
     padding: 0;
@@ -108,7 +111,7 @@
 
   @media (min-width: $desktop) {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 0;
     align-self: start;
   }
 }

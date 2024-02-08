@@ -13,75 +13,79 @@
   }
 }
 
-.control__input[type="radio"] {
+.control__lead {
   position: relative;
+}
 
-  &::before{
+.control__input[type="radio"] {
+  cursor: pointer;
+
+  & + .control__lead::before{
     content: "";
     display: block;
     height: 30px;
     width: 30px;
 
     position: absolute;
-    left: -9px;
-    top: -8px;
+    top: 0;
+    left: -46px;
 
     border: 1px solid $color-gray-250;
     border-radius: 50%;
 
     background-color: $color-white;
   }
-  &:checked {
-    &::after {
-      content: "";
-      display: block;
-      width: 12px;
-      height: 12px;
 
-      position: absolute;
-      left: 0;
-      top: 1px;
+  &:checked + .control__lead::after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
 
-      border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -37px;
+    transform: translateY(-50%);
 
-      background-color: $color-primary-500;
-    }
+    border-radius: 50%;
+
+    background-color: $color-primary-500;
   }
 }
 
 .control__input[type="checkbox"] {
-  position: relative;
+  cursor: pointer;
 
-  &::before {
+  & + .control__lead::before {
     content: "";
     display: block;
     width: 30px;
     height: 30px;
 
     position: absolute;
-    top: -8px;
-    left: 0;
+    top: 50%;
+    left: -54px;
+    transform: translateY(-50%);
 
     border: 1px solid $color-gray-250;
 
     background-color: $color-white;
   }
 
-  &:checked {
-    &::after {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 30px;
+  &:checked + .control__lead::after  {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
 
-      position: absolute;
-      top: -8px;
-      left: 0;
+    position: absolute;
+    top: 50%;
+    left: -54px;
+    transform: translateY(-50%);
 
-      background-image: url("../../img/icons/checkmark.svg");
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
+    background-image: url("../../img/icons/checkmark.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 
